@@ -1,73 +1,116 @@
-# React + TypeScript + Vite
+# 💬 Nesora App - Chat RealTime
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## About
 
-Currently, two official plugins are available:
+Nexora App is a modern real-time chat application designed for seamless and secure communication.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Instant Messaging: Send and receive text messages instantly.
 
-## React Compiler
+Media Support: Share images and emojis to make conversations more engaging.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+User Presence: Know who is online and see when someone is typing.
 
-## Expanding the ESLint configuration
+Profile Management: View user profiles and search for contacts easily.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Message Control: Delete messages and see read receipts.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Responsive Design: Works flawlessly on both desktop and mobile devices.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Secure & Reliable: Built with modern technologies ensuring fast and safe messaging.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+###  Features
+
+- Real-time messaging with instant delivery
+- Send and receive images and emojis
+- Online status indicators and typing notifications
+- User profile management
+- Delete messages and see read receipts
+- Responsive design for desktop and mobile
+- Secure authentication and token-based access
+- Smooth and modern user interface
+
+
+### ⚙️ Technical Features
+- RESTful API built with ExpressJs
+- State management using Zustand
+- Full front-end and back-end integration
+- MongoDB database
+- Scalable and maintainable codebase
+
+---
+
+## Tech Stack
+
+### Front-End
+- React
+- TypeScript
+- Zustand
+- Tailwind CSS
+- Socket.io-client
+
+### Back-End
+- ExpressJs
+- Bun.js
+- MongoDB
+- JWT Authentication
+- Socket.io
+
+### Tools
+- Git & GitHub
+- Render / Netlify (Deployment)
+
+---
+
+## How to Run the Project
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/ZenZN99/Nexora-App.git
+cd Nexora-App
+2️⃣ Run Back-End (ExpressJs)
+bash
+Copy code
+cd server
+bun install
+bun run start
+Create a .env file in the backend root directory.
+
+Environment Variables
+Variable Name	Description	Example Value
+PORT	Server port	5000
+DATABASE_URL=your_mongodb_atlas_url
+JWT_SECRET=your_secret
+JWT_EXPIRES_IN=your_expires_in
+ADMIN_EMAIL=your_admin_email
+ADMIN_PASSWORD=your_admin_password
+CLOUDINARY_CLOUD_NAME=your_cloud_name
+CLOUDINARY_API_KEY=your_api_key
+CLOUDINARY_API_SECRET=your_api_secret
+
+The server will run on:
+
+http://localhost:5000
+3️⃣ Run Front-End (React)
+bash
+Copy code
+cd client
+bun install
+npm run dev
+The application will run on:
+
+http://localhost:5173
 ```
+🚀 The project is complete and ready for use, with future enhancements planned such as:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Add notifications
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Add a chat group
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Add audio recording
+
+Author
+Zen
+Full-Stack Software Engineer
+Built with ❤️ using React &  ExpressJs
