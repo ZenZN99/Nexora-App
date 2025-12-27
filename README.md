@@ -1,4 +1,4 @@
-# 💬 Nesora App - Chat RealTime
+# 💬 Nexora App - Chat RealTime
 
 ## About
 
