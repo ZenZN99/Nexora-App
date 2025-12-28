@@ -1,5 +1,7 @@
 # 💬 Nexora App - Chat RealTime
 
+![Website Preview](https://res.cloudinary.com/dgagbheuj/image/upload/v1766948373/sttrh1lmohktowhnmtx0.jpg)
+
 ## About
 
 Nexora App is a modern real-time chat application designed for seamless and secure communication.
