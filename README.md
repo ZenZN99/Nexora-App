@@ -1,53 +1,113 @@
-# 💬 Nexora App - Real-Time Chat 🚀
+# 💬 Nexora App - Chat RealTime
 
 ![Website Preview](https://res.cloudinary.com/dgagbheuj/image/upload/v1766948373/sttrh1lmohktowhnmtx0.jpg)
 
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Frontend](https://img.shields.io/badge/Front--End-React%20%7C%20TypeScript-blue)](#)
-[![Backend](https://img.shields.io/badge/Back--End-Express%20%7C%20Bun.js-green)](#)
-[![Database](https://img.shields.io/badge/Database-MongoDB-brightgreen)](#)
-[![Socket.io](https://img.shields.io/badge/Realtime-Socket.io-orange)](#)
-[![Status](https://img.shields.io/badge/Status-Active-brightgreen)](#)
+## About
+
+Nexora App is a modern real-time chat application designed for seamless and secure communication.
+
+Instant Messaging: Send and receive text messages instantly.
+
+Media Support: Share images and emojis to make conversations more engaging.
+
+User Presence: Know who is online and see when someone is typing.
+
+Profile Management: View user profiles and search for contacts easily.
+
+Message Control: Delete messages and see read receipts.
+
+Responsive Design: Works flawlessly on both desktop and mobile devices.
+
+Secure & Reliable: Built with modern technologies ensuring fast and safe messaging.
 
 ---
 
-## 🌟 Overview
-**Nexora App** is a modern, real-time chat application with instant messaging, media sharing, user presence indicators, and a polished, responsive design.  
-Available on **desktop and mobile**, built for **speed, security, and scalability**.
+### Features
+
+- Real-time messaging with instant delivery
+- Send and receive images and emojis
+- Online status indicators and typing notifications
+- User profile management
+- Delete messages and see read receipts
+- Responsive design for desktop and mobile
+- Secure authentication and token-based access
+- Smooth and modern user interface
+
+### ⚙️ Technical Features
+- RESTful API built with ExpressJs
+- State management using Zustand
+- Full front-end and back-end integration
+- MongoDB database
+- Scalable and maintainable codebase
 
 ---
 
-## 🚀 Features
+## Tech Stack
 
-- 💬 Real-time messaging  
-- 🖼️ Share images & emojis  
-- 👤 Online/offline indicators  
-- ✍️ Typing notifications  
-- 📝 User profile management  
-- 🗑️ Delete messages & read receipts  
-- 📱 Responsive design (mobile & desktop)  
-- 🔒 Secure authentication with JWT  
+### Front-End
+- React
+- TypeScript
+- Zustand
+- Tailwind CSS
+- Socket.io-client
 
----
+### Back-End
+- ExpressJs
+- Bun.js
+- MongoDB
+- JWT Authentication
+- Socket.io
 
-## ⚙️ Tech Stack
-
-**Front-End:** React, TypeScript, Zustand, Tailwind CSS, Socket.io-client  
-**Back-End:** Express.js, Bun.js, MongoDB, Socket.io, JWT Authentication  
-**Deployment & Tools:** Render, Netlify, Cloudinary, Git & GitHub  
-
----
-
-## 🔗 Live Preview
-Check out the app live: [Nexora App Demo](#)
+### Tools
+- Git & GitHub
+- Render / Netlify (Deployment)
 
 ---
 
-## 👨‍💻 Author
-**Zen** – Full-Stack Software Engineer  
-Built with ❤️ using React & Express.js  
+## How to Run the Project
 
----
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/ZenZN99/Nexora-App.git
+cd Nexora-App
+2️⃣ Run Back-End (ExpressJs)
+bash
+Copy code
+cd server
+bun install
+bun run start
+Create a .env file in the backend root directory with the following variables:
 
-## 📌 GitHub Topics
-`react nodejs realtime chat messenger tailwindcss expressjs bunjs mongodb socket.io jwt`
+Variable Name	Description	Example Value
+PORT	Server port	5000
+DATABASE_URL	MongoDB Atlas URL	your_mongodb_atlas_url
+JWT_SECRET	JWT secret	your_secret
+JWT_EXPIRES_IN	JWT expiration	your_expires_in
+ADMIN_EMAIL	Admin email	your_admin_email
+ADMIN_PASSWORD	Admin password	your_admin_password
+CLOUDINARY_CLOUD_NAME	Cloudinary cloud name	your_cloud_name
+CLOUDINARY_API_KEY	Cloudinary API key	your_api_key
+CLOUDINARY_API_SECRET	Cloudinary API secret	your_api_secret
+
+The server will run on: http://localhost:5000
+
+3️⃣ Run Front-End (React)
+bash
+Copy code
+cd client
+bun install
+npm run dev
+The application will run on: http://localhost:5173
+
+🚀 The project is complete and ready for use, with future enhancements planned such as:
+
+Add notifications
+
+Add a chat group
+
+Add audio recording
+
+Author
+Zen
+Full-Stack Software Engineer
+Built with ❤️ using React & ExpressJs
